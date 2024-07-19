@@ -1,0 +1,29 @@
+{
+    "Image": "itzg/minecraft-server",
+    "Cmd": "",
+    "Env": [
+        "VERSION=1.21",
+        "MEMORY=2G",
+        "EULA=TRUE",
+        "DIFFICULTY=easy",
+        "MAX_PLAYERS=20",
+        "SERVER_PORT=25565",
+        "OP=admin",
+        "START=java -Xms128M -XX:MaxRAMPercentage=95.0 -Dterminal.jline=false -Dterminal.ansi=true -jar server.jar"
+    ],
+    "Scripts": {
+        "Install": [
+            {
+                "Uri": "https://raw.githubusercontent.com/kanetjuh/testing/main/server.properties",
+                "Path": "server.properties"
+            }
+        ]
+    },
+    "Name": "Minecraft Java: PaperMC",
+    "Description": "PaperMC is an optimized, high-performance fork of SpigotMC for Minecraft servers. It aims to improve performance and stability by offering additional features, enhanced configuration options, and bug fixes. Known for its robust plugin compatibility and active development community, PaperMC is a preferred choice for server administrators looking to enhance their Minecraft multiplayer experience.",
+    "Author": "info@skyport.dev",
+    "AuthorName": "Skyport Labs",
+    "Meta": {
+        "Version": "Skyport Images v2"
+    }
+}
